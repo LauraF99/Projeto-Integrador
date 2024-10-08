@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href='cadastro.css'>
+
+</head>
+
+
+<body>
+    <header>
+    </header>
+    <br>
+    <section class="container">
+        <div class="form-box">
+            
+            
+            
+            <form method="post" class="cadastro" id="cadastro">
+                <img class="logo" src="assets/craftland logo.png " alt="logo">
+                <h2>Criar Conta</h2>
+                <div class="input-group">
+                    <label for="nome"> Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="emailCadastro" placeholder="Digite o seu email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
+                </div>
+
+                <div class="input-group w50">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senhaCadastro" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="input-group w50">
+                    <label for="Confirmarsenha">Confirmar Senha</label>
+                    <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required>
+                </div>
+                <br>
+                <br>
+
+                <div class="input-group">
+                    <button class="btn" type="submit">Cadastrar</button>
+                </div>
+                <br>
+                <div id="registerMessage" class="message"></div>
+                <br>
+
+            </form>
+            
+
+            <div class="social">
+                <p>Ou cadastre-se com: </p>
+                <a href=""><img src="assets/facebook.png" alt=""></a>
+                <a href=""><img src="assets/google.png" alt=""></a>
+            </div>
+        </div>
+        <br>
+
+        <footer>
+            <p>Craftland &copy; 2024 Todos os direitos reservados</p>
+        </footer>
+    </section>
+
+    <script src='cadastro.js'></script>
+
+
+</body>
+
+</html>
