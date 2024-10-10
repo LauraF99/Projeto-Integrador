@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-image: linear-gradient(to bottom, #8ED9F1, #0567D9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-repeat: no-repeat;
+    
+}
+header{
+    background-color: #2c72b7;
+    backdrop-filter: blur(60px);
+    border-radius: 20px 20px 20px 20px;
+}
+.logo{
+    width: 150px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.menuPrincipal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: #fffaf0;
+    padding: 16px;
+    
+    
+}
+
+.cBotao{
+    color: #fffaf0;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: #2c72b7 1px 1px 1px;
+    text-decoration: none;
+    background-color: #2c72b7 ;
+    border: none;
+    
+}
+
+h1{
+    margin-left: 45%;
+    margin-top: 8%;
+}
+
+/* display do Body */
+
+.d1{
+    height: 70vh; /* Ajuste a altura conforme necessário */
+    display: flex; /* Se você estiver usando Flexbox */
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    gap: 5%;
+}
+
+.divizinha1{
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+    width: 400px;
+    height: 400px;
+}
+#dv1 {
+    
+background-color: #ffb23e;
+}
+#dv2{
+    background-color: #9988FF;
+}
+#dv3{
+    background-color: #0ABAC5;
+}
+
+.titulo-div1{
+    margin-down: 10px ;
+}
+
+.tabcontent{
+    height: 100vh;;
+}
