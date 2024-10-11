@@ -1,0 +1,7 @@
+
+- favicon.io = converter extensão de imagem para .ico
+- favicon.ico = fazer desenhos .ico
+
+- site para grafico: https://www.chartjs.org/docs/latest/samples/other-charts/multi-series-pie.html
+
+- bootstrap para abas: https://getbootstrap.com/docs/5.3/components/navs-tabs/#tabs
