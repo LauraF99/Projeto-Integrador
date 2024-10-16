@@ -43,7 +43,11 @@ header{
     border: none;
     
 }
-
+.cBotao:active{
+    background: #8ED9F1;
+    border-radius: 100px;
+    padding: 10px;
+}
 
 
 .container {
