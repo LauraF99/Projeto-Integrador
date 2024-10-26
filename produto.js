@@ -1,7 +1,7 @@
 // Lista de produtos pré-cadastrados
 let produtos = [
-    { id: 1, nome: "Produto A", categoria: "Categoria 1", tamanho: "M", valor: 100 },
-    { id: 2, nome: "Produto B", categoria: "Categoria 2", tamanho: "G", valor: 150 }
+    { id: 1, nome: "Astronauta", categoria: "Profissões", tamanho: "M", valor: 100 },
+    { id: 2, nome: "Homem-Aranha", categoria: "Super-Heróis", tamanho: "G", valor: 150 }
 ];
 
 // Inicializa o contador de ID com base no último produto cadastrado ou 1 se a lista estiver vazia

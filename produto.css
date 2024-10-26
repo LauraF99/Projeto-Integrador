@@ -84,6 +84,13 @@ form input, form button {
 
 }
 
+form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 form button {
     grid-column: span 2;
     background-color: #28a745;
@@ -127,4 +134,10 @@ table th {
 .actions .delete {
     background-color: #dc3545;
     color: white;
+}
+
+footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;    
 }
