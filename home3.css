@@ -43,6 +43,14 @@ header{
     
 }
 
+.cBotao:active{
+    background: #8ED9F1;
+    border-radius: 100px;
+    padding: 10px;
+/*     height: ;
+    width: ; */
+}
+
 h1{
     margin-left: 45%;
     margin-top: 8%;

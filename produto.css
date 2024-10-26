@@ -21,7 +21,7 @@ header{
     align-items: center;
 }
 
-.menuPrincipal{
+ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,26 +30,17 @@ header{
     color: #fffaf0;
     padding: 16px;
     
-    
+   
 }
 
-.cBotao{
+a{
     color: #fffaf0;
     font-size: 24px;
     font-weight: 600;
     text-shadow: #2c72b7 1px 1px 1px;
-    text-decoration: none; 
-    background-color: #2c72b7 ;
-    border: none;
-    
+    text-decoration: none;
 }
-.cBotao:active{
-    background: #8ED9F1;
-    border-radius: 100px;
-    padding: 10px;
-/*     height: ;
-    width: ; */
-}
+
 
 
 .container {
