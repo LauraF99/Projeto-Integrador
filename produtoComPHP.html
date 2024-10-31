@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='produto.css'>
+
+</head>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="assets/craftland logo.png" alt="">
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="vendas.html">Vendas</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+            </ul>
+        </nav>
+            
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Cadastro de Produto</h1>
+            <form id="produtoForm" action="produto.php" method="post">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" name="nome_produto" id="nome" required>
+    
+                <label for="categoria">Categoria:</label>
+                <select type="text" name="categoria" id="categoria" required>
+                    <option ></option>
+                    <option > Animais </option>
+                    <option > Personagens </option>
+                    <option > Profissões </option>
+                    <option > Super-Heróis </option>
+                    
+                </select>
+<!--                 <input type="text" id="categoria" required> -->
+    
+                <label for="tamanho">Tamanho:</label>
+                <select type="text" name="tamanho" id="tamanho" required>
+                    <option ></option>
+                    <option > PP </option>
+                    <option > P </option>
+                    <option > M </option>
+                    <option > G </option>
+                    <option > GG </option>
+                </select>
+<!--                 <input type="text" id="tamanho" required> -->
+    
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor_produto" id="valor" required>
+    
+                <button type="submit">Adicionar Produto</button>
+            </form>
+    
+            <h2>Lista de Produtos</h2>
+            <table id="listaProdutos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Tamanho</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Produtos pré-cadastrados -->
+                </tbody>
+            </table>
+        </div>
+        <script src="produto.js"></script>
+    </main>
+    <footer>
+        <p>Craftland &copy; 2024 Todos os direitos reservados</p>
+    </footer>
+    
+</body>
+</html>
+                   
