@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='home3.css'>
+
+</head>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="assets/craftland logo.png" alt="logo marca">
+            <div class="menuPrincipal">
+                <button class="cBotao" onclick="teste(event, 'inicio')" class="tablinks">Inicio</button>
+                <button class="cBotao" onclick="teste(event, 'produtos')" class="tablinks">Produtos</button>
+                <button class="cBotao" onclick="teste(event, 'vendas')" class="tablinks">Vendas</button>
+                <button class="cBotao" onclick="teste(event, 'clientes')" class="tablinks">Clientes</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        const ctx = document.getElementById('myChart');
+        
+        new Chart(ctx, {
+            type: 'line', // tipo do gráfico: linha
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'], // Eixos x
+                datasets: [
+                    {
+                        label: 'Produto', // Título da primeira linha
+                        data: [12, 19, 3, 5, 2, 3], // Dados da primeira linha
+                        borderColor: '#EB9B96', // Cor da linha
+                        fill: false // Não preencher abaixo da linha
+                    },
+                    {
+                        label: 'Vendas', // Título da segunda linha
+                        data: [7, 11, 5, 8, 3, 7], // Dados da segunda linha
+                        borderColor: '#D098EB', // Cor da linha
+                        fill: false // Não preencher abaixo da linha
+                    },
+                    {
+                        label: 'Clientes', // Título da terceira linha
+                        data: [2, 3, 20, 5, 1, 4], // Dados da terceira linha
+                        borderColor: '#EBC0D0', // Cor da linha
+                        fill: false // Não preencher abaixo da linha
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <footer></footer>
+    <script src="home3.js"></script>
+</body>
+
+
+</html>
