@@ -32,10 +32,10 @@
             <h1>Cadastro de Produto</h1>
             <form id="produtoForm" action="produto.php" method="post">
                 <label for="nome">Nome do Produto:</label>
-                <input type="text" id="nome" required>
+                <input type="text" name="nomeProduto" id="nome" required>
     
                 <label for="categoria">Categoria:</label>
-                <select id="categoria" required>
+                <select type="text" name="categoria" id="categoria" required>
                     <option ></option>
                     <option > Animais </option>
                     <option > Personagens </option>
@@ -46,7 +46,7 @@
 <!--                 <input type="text" id="categoria" required> -->
     
                 <label for="tamanho">Tamanho:</label>
-                <select id="tamanho" required>
+                <select type="text" name="tamanho" id="tamanho" required>
                     <option ></option>
                     <option > PP </option>
                     <option > P </option>
@@ -57,7 +57,7 @@
 <!--                 <input type="text" id="tamanho" required> -->
     
                 <label for="valor">Valor:</label>
-                <input type="number" id="valor" required>
+                <input type="number" step="0.01" placeholder="Digite um número decimal" name="valorProduto" id="valor" required>
     
                 <button type="submit">Adicionar Produto</button>
             </form>
