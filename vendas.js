@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
             row.innerHTML = `
                 <td>${pedido.id}</td>
                 <td>${pedido.nomeCliente}</td>
-                <td>${pedido.idProduto}</td>
+                <td>R$ ${pedido.valorProduto.toFixed(2)}</td>
                 <td>${pedido.quantidade}</td>
-                <td>${pedido.valorTotal.toFixed(2)}</td>
+                <td>R$ ${pedido.valorTotal.toFixed(2)}</td>
                 <td>${pedido.pagamento}</td>
                 <td>
                     <select onchange="alterarStatus(${pedido.id}, this.value)">
@@ -41,16 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         
         const nomeCliente = document.getElementById('nomeCliente').value;
-        const idProduto = parseInt(document.getElementById('idProduto').value);
+        const valorProduto = parseFloat(document.getElementById('valorProduto').value);
         const quantidade = parseInt(document.getElementById('quantidade').value);
         const pagamento = document.getElementById('pagamento').value;
-        const valorUnitario = 50.00; // Por exemplo, cada produto tem um valor fixo de 50
-        const valorTotal = quantidade * valorUnitario;
+        const valorTotal = valorProduto * quantidade;
 
         const novoPedido = {
             id: idCounter++,
             nomeCliente,
-            idProduto,
+            valorProduto,
             quantidade,
             valorTotal,
             pagamento,
@@ -67,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pedido = pedidos.find(p => p.id === id);
         if (pedido) {
             document.getElementById('nomeCliente').value = pedido.nomeCliente;
-            document.getElementById('idProduto').value = pedido.idProduto;
+            document.getElementById('valorProduto').value = pedido.valorProduto;
             document.getElementById('quantidade').value = pedido.quantidade;
             document.getElementById('pagamento').value = pedido.pagamento;
 
