@@ -1,7 +1,7 @@
 // Lista de produtos pré-cadastrados
 let produtos = [
-    { id: 1, nome: "Astronauta", categoria: "Profissões", tamanho: "M", valor: 100 },
-    { id: 2, nome: "Homem-Aranha", categoria: "Super-Heróis", tamanho: "G", valor: 150 }
+    { id: 1, nome: "Astronauta", categoria: "Profissões", tamanho: "M", valor: 100, quantidade: "2" },
+    { id: 2, nome: "Homem-Aranha", categoria: "Super-Heróis", tamanho: "G", valor: 150, quantidade: "2" }
 ];
 
 // Inicializa o contador de ID com base no último produto cadastrado ou 1 se a lista estiver vazia
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${produto.categoria}</td>
                 <td>${produto.tamanho}</td>
                 <td>${produto.valor}</td>
+                <td>${produto.quantidade}</td>
                 <td class="actions">
                     <button class="edit" onclick="editarProduto(${produto.id})">Editar</button>
                     <button class="delete" onclick="excluirProduto(${produto.id})">Excluir</button>
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const categoria = document.getElementById('categoria').value;
         const tamanho = document.getElementById('tamanho').value;
         const valor = document.getElementById('valor').value;
+        const quantidade = document.getElementById('quantidade').value;
 
         // Cria um novo objeto de produto com os dados do formulário e um ID incremental
         const novoProduto = {
@@ -54,7 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
             nome,
             categoria,
             tamanho,
-            valor: parseFloat(valor) // Converte o valor para um número
+            valor: parseFloat(valor), // Converte o valor para um número
+            quantidade: parseInt(quantidade)
         };
 
         // Adiciona o novo produto à lista de produtos
@@ -78,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('categoria').value = produto.categoria;
             document.getElementById('tamanho').value = produto.tamanho;
             document.getElementById('valor').value = produto.valor;
+            document.getElementById('quantidade').value = produto.quantidade;
 
             // Remove o produto da lista para permitir a edição
             produtos = produtos.filter(p => p.id !== id);
