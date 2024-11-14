@@ -3,8 +3,11 @@
 
 
 .logo{
+    margin-left: 2%;
+    padding-top: 1%;
     width: 150px;
     display: flex;
+    align-items: center;
     
    
 }
