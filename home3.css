@@ -14,8 +14,9 @@ header{
     border-radius: 20px 20px 20px 20px;
 }
 .logo{
+    margin-left: 2%;
+    padding-top: 1%;
     width: 150px;
-    margin-left: 20px;
     display: flex;
     align-items: center;
     
