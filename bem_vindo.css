@@ -1,55 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 body{
-    background-image: linear-gradient(to bottom, #8ED9F1, #0567D9);
+    background-image: linear-gradient(to bottom, #8ed8f1d1, #0568d9ba);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     background-repeat: no-repeat;
-    height: 150vh;
     
 }
+
 header{
     background-color: #2c72b7;
     backdrop-filter: blur(60px);
     border-radius: 20px 20px 20px 20px;
+    margin: 0;
 }
+
 .logo{
     margin-left: 2%;
     padding-top: 1%;
     width: 150px;
     display: flex;
     align-items: center;
-    
 }
-.menuPrincipal{
+
+ul{
     display: flex;
-    gap: 10px;
+    justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
     list-style: none;
     color: #fffaf0;
-    padding: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 15px;
     
-    
+   
 }
-
-.cBotao{
+a{
     color: #fffaf0;
     font-size: 24px;
     font-weight: 600;
     text-shadow: #2c72b7 1px 1px 1px;
-    text-decoration: none; 
-    background-color: #2c72b7 ;
-    border: none;
-    height: 50px;
-    width: 200px;
+    text-decoration: none;
+}
+/* o header acaba aqui */
 
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.395);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
+}
+h1{
+    text-align: center;
+}
+
+.primeiroH1{
+margin-top: 25px;
+}
+
+.divCont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+}
+.imgqs{
+    height: 300px;
+    width: auto;
     
 }
-
-.cBotao:active{
-    background: #8ED9F1;
-    border-radius: 100px;
+p,h3{
+    margin-left: 10px;
+    margin-right: 10px;
 }
+.borda_a_esquerda{
+    border-left: solid rgba(128, 128, 128, 0.719);
+    border-radius: 40px;
+    
+}
+.borda_a_direita{
+    border-right: solid rgba(128, 128, 128, 0.719);
+    border-radius: 40px;
 
+}
