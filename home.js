@@ -3,7 +3,7 @@ const ctx1 = document.getElementById('produtosVendidosChart').getContext('2d');
 const produtosVendidosChart = new Chart(ctx1, {
     type: 'bar',
     data: {
-        labels: ['Produto A', 'Produto B', 'Produto C', 'Produto D', 'Produto E'],
+        labels: ['Astronauta', 'Mario Bros', 'Princesa Bela', 'Coelho', 'Ursinho'],
         datasets: [{
             label: 'Quantidade Vendida',
             data: [15, 30, 10, 50, 25],
@@ -30,7 +30,7 @@ const vendasChart = new Chart(ctx2, {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
         datasets: [{
             label: 'Vendas Totais',
-            data: [5000, 8000, 7500, 10000, 12000, 15000],
+            data: [50, 80, 75, 100, 120, 150],
             borderColor: '#1abc9c',
             backgroundColor: 'rgba(26, 188, 156, 0.2)',
             fill: true
