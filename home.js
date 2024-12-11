@@ -30,7 +30,7 @@ const vendasChart = new Chart(ctx2, {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
         datasets: [{
             label: 'Vendas Totais',
-            data: [50, 80, 75, 100, 120, 150],
+            data: [5000, 8000, 7500, 10000, 12000, 15000],
             borderColor: '#1abc9c',
             backgroundColor: 'rgba(26, 188, 156, 0.2)',
             fill: true
