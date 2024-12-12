@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-    
-
-
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #2c72b7;
     color: #fffaf0;
     font-weight: 600;
+    margin: 0;
 }
 
 .container{
@@ -19,19 +16,13 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #fffaf0;
     margin: 0;
-}
-
-    
-
-    
+}    
     
 .logo{
-    width: 250px;
+    width: 200px;
     display: flex;
    
 }
-
-
 
 .login{
     display: flex;
@@ -44,15 +35,9 @@ body{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 40px;
+    margin: 0;
 }
-    
-   
-    
-    
-
-
-
 form .input-group{
     display: flex;
     flex-direction: column;
@@ -62,11 +47,6 @@ form .input-group{
     font-weight: 600;
    
 }
-    
-   
-
-
-
 
 input{
     width: 300px;
@@ -88,8 +68,10 @@ form .input-group input{
     transition: all 0.4s ease;
    
 }
-   
-    
+.alink{
+    color: inherit;
+    text-decoration: none;
+}
 
 .btn{
     background-color:  #fffaf0;
@@ -101,7 +83,11 @@ form .input-group input{
     text-decoration: none;
     cursor: pointer;
 }
-
+button:hover{
+    color: #fffaf0;
+    background-color: #2c72b7;
+    text-decoration: none;
+}
 
 .social{
     display: flex;
@@ -113,11 +99,24 @@ form .input-group input{
     text-decoration: none;
 }
 
-
-
 footer{
     display: flex;
     justify-content:center;
-    align-items: center;    
+    align-items: center;
+    padding: 10px auto;
+    background-color: rgba(211, 211, 211, 0.395);
 
+
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.395);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
 }
