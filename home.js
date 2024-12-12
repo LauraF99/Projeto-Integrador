@@ -46,14 +46,14 @@ const vendasChart = new Chart(ctx2, {
     }
 });
 
-// Aniversário dos Clientes
-const ctx3 = document.getElementById('aniversariosChart').getContext('2d');
-const aniversariosChart = new Chart(ctx3, {
+// Novos Clientes
+const ctx3 = document.getElementById('clientesChart').getContext('2d');
+const clientesChart = new Chart(ctx3, {
     type: 'pie',
     data: {
         labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
         datasets: [{
-            label: 'Aniversários',
+            label: 'Clientes',
             data: [5, 8, 12, 7, 4, 10],
             backgroundColor: ['#f39c12', '#e74c3c', '#2ecc71', '#3498db', '#8e44ad', '#1abc9c'],
             borderColor: '#fff',
